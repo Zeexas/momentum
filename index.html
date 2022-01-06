@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+
+    <div class="player">
+      <audio src=""></audio>
+      <div class="player-panel">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        <div class="player-stuff">
+          <div class="song-title"></div>
+          <input type="range" class="progress-bar" id="progress-bar" min="0" max="" value="0">
+          <div class="song-time">
+            <div class="current-time"></div>
+            <i>&nbsp;/&nbsp;</i>
+            <div class="song-duration"></div>
+          </div>
+          <div class="volume sound-on"></div>
+          <input type="range" class="volume-bar" min="0" max="100" value="30">
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+
+    <div class="weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+    
+  </header>
+
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" />
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div class="quote-container">
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+
+    <div class="settings"></div>
+    <div class="settings-content">
+      
+      <div class="see-set">
+        <div class="see-title">
+          <span class="eng">Show</span>
+          <span class="rus">Показать</span>
+        </div>
+        <div class="see-player see-item">
+          <div class="see-player-title">
+            <span class="eng">a-Player</span>
+            <span class="rus">а-Плеер</span>
+          </div>
+          <label class="toggle">
+            <input id="see-player" class="checkbox" type="checkbox" checked>
+            <div class="switch"></div>
+          </label>
+        </div>
+        <div class="see-weather see-item">
+          <div class="see-weather-title">
+            <span class="eng">Weather</span>
+            <span class="rus">Погода</span>
+          </div>
+          <label class="toggle">
+            <input id="see-weather" class="checkbox" type="checkbox" checked>
+            <div class="switch"></div>
+          </label>
+        </div>
+        <div class="see-time see-item">
+          <div class="see-time-title">
+            <span class="eng">Time</span>
+            <span class="rus">Время</span>
+          </div>
+          <label class="toggle">
+            <input id="see-time" class="checkbox" type="checkbox" checked>
+            <div class="switch"></div>
+          </label>
+        </div>
+        <div class="see-date see-item">
+          <div class="see-date-title">
+            <span class="eng">Date</span>
+            <span class="rus">Дата</span>
+          </div>
+          <label class="toggle">
+            <input id="see-date" class="checkbox" type="checkbox" checked>
+            <div class="switch"></div>
+          </label>
+        </div>
+        <div class="see-greeting see-item">
+          <div class="see-greeting-title">
+            <span class="eng">Greetings</span>
+            <span class="rus">Приветствие</span>
+          </div>
+          <label class="toggle">
+            <input id="see-greeting" class="checkbox" type="checkbox" checked>
+            <div class="switch"></div>
+          </label>
+        </div>
+        <div class="see-quote see-item">
+          <div class="see-quote-title">
+            <span class="eng">Quotes</span>
+            <span class="rus">Цитата</span>
+          </div>
+          <label class="toggle">
+            <input id="see-quote" class="checkbox" type="checkbox" checked>
+            <div class="switch"></div>
+          </label>
+        </div>
+  
+      </div>
+
+      <div class="language">
+        <div class="lang-title"></div>
+        <button class="lang-btn"></button>
+      </div>
+
+    </div>
+
+    <div class="links">
+      <a href="https://github.com/Zeexas" target="_blank">
+        <img class="github" src="assets/svg/github.svg" alt="github-icon">
+      </a>
+      <b><time>2021</time></b>
+      <a href="https://rs.school/js/" target="_blank">
+        <img class="rsschool" src="assets/svg/rs_school_js.svg" alt="rs_school_js-icon">
+      </a>
+    </div>
+
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
